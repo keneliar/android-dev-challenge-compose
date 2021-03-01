@@ -41,6 +41,7 @@ class PuppyDetailViewModel(
     class Factory(
         private val puppyId: Int
     ) : ViewModelProvider.NewInstanceFactory() {
+
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return PuppyDetailViewModel(puppyId) as T
